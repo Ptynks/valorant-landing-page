@@ -1,0 +1,21 @@
+header {
+    border-bottom: 2px solid gray;
+}
+
+.bg-primary {
+    background-color: #ff4655 !important;
+}
+
+.bg-dark {
+    background-color: #111 !important;
+}
+
+.img-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.text-padding-top {
+    padding-top: 10px;
+}
