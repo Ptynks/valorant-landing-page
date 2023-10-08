@@ -1,64 +1,216 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
     <title>Valorant - landing page</title>
 </head>
 <body>
 
-    <header class="text-center bg-dark w-100 overflow-hidden">
-        <div class="row">
-            <div class="col-1">
-                <img class="img-icon" src="images/favicon.ico" alt="icon">
-            </div>
-            <div class="col-9 text-light font-monospace">
-                <div class="row">
-                    <div class="col">
-                        <p class="pt-2 mt-2">
+    <nav class="navbar navbar-expand-lg bg-dark val-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/favicon.ico" width="50" height="50">
+            </a>     
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown hover-navbar rounded-3 me-4 ms-4">
+                        <a class="nav-link dropdown-toggle text-light fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             THÔNG TIN TRÒ CHƠI
-                        </p>
-                    </div>
-                    <div class="col">
-                        <p class="pt-2 mt-2">
-                            TRUYỀN THÔNG
-                        </p>
-                    </div>
-                    <div class="col">
-                        <p class="pt-2 mt-2">
-                            TIN TỨC
-                        </p>
-                    </div>
-                    <div class="col">
-                        <p class="pt-2 mt-2">
-                            BẢNG XẾP HẠNG
-                        </p>
-                    </div>
-                    <div class="col">
-                        <p class="pt-2 mt-2">
-                            HỖ TRỢ
-                        </p>
-                    </div>
-                    <div class="col">
-                        <p class="pt-2 mt-2">
-                          THÊM  
-                        </p>
+                        </a>
+        
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-light" href="#">ĐẶC VỤ</a></li>
+                            <li><a class="dropdown-item text-light" href="#">BẢN ĐỒ</a></li>
+                            <li><a class="dropdown-item text-light" href="#">VŨ KHÍ</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item hover-navbar rounded-3 me-4">
+                        <a class="nav-link text-light fw-semibold" href="#">TRUYỀN THÔNG</a>
+                    </li>
+
+                    <li class="nav-item hover-navbar rounded-3 me-4">
+                        <a class="nav-link text-light fw-semibold" href="#">TIN TỨC</a>
+                    </li>
+
+                    <li class="nav-item hover-navbar rounded-3 me-4">
+                        <a class="nav-link text-light fw-semibold" href="#">BẢNG XẾP HẠNG</a>
+                    </li>
+
+                    <li class="nav-item dropdown hover-navbar rounded-3 me-4">
+                        <a class="nav-link dropdown-toggle text-light fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            THÊM
+                        </a>
+        
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-light" href="#"></a></li>
+                            <li><a class="dropdown-item text-light" href="#"></a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-light" href="#"></a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <button id="search-icon" class="btn text-dark ps-3 pe-3 rounded-4 text-center" type="submit">
+                    <img src="images/search.svg" alt="">
+                </button>
+                <button class="btn bg-primary text-dark fw-bolder ps-3 pe-3 rounded-4 ms-3" type="submit">Chơi ngay</button>
+
+            </div>
+        </div>
+    </nav>
+
+    <body class="vh-100 bg-primary">
+
+        <section name="text">
+            <video autoplay muted loop>
+                <source src="videos/trailer.mp4" type="video/mp4">
+            </video>
+            <div class="val-text-container">
+                <p class="val-text-description">Một tựa game đấu súng chiến thuật 5 đấu 5 lấy nhân vật làm nền tảng</p>
+                <p class="val-text-title">vAlorant</p>
+                <div class="val-button-container">
+                    <div class="val-outline val-button-center">
+                        <a class="val-button" href="#">CHƠI MIỄN PHÍ</a>
                     </div>
                 </div>
             </div>
-            <div class="col-2">
-                <button class="btn btn-danger bg-primary p-2 ps-4 pe-4 mt-3">Chơi ngay</button>
+        </section>
+
+        <section name="news">
+            <div class="bg-light container-fluid">
+                <h2 class="news-title">TIN TỨC MỚI NHẤT</h2>
+                <div class="row">
+                    
+                    <div class="col-4 d-flex justify-content-center">
+                        <div class="card" style="width: 20rem;">
+                            <img src="images/EP7_Act2_PatchNotes_7_07_Banner.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">03/10/23</p>
+                                <h5 class="card-title fw-bold text-gray">VALORANT - THÔNG TIN BẢN CẬP NHẬT 7.07</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 d-flex justify-content-center">
+                        <div class="card" style="width: 20rem;">
+                            <img src="images/EP7_Act2_Gekko_Deacklock_DE.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">29/09/23</p>
+                                <h5 class="card-title fw-bold text-gray">HIỆN TRẠNG VỀ CÁC ĐẶC VỤ: GEKKO, DEADLOCK VÀ ???</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 d-flex justify-content-center">
+                        <div class="card" style="width: 20rem;">
+                            <img src="images/Valorant_Community_Spotlight_September_2023.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">27/09/23</p>
+                                <h5 class="card-title fw-bold text-gray">TIÊU ĐIỂM CỘNG ĐỒNG: 09/2023</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </header>
+        </section>
+
+        <section name="overview">
+            <div class="overview-bg-img">
+                <div class="overview-text-container">
+                    <span class="overview-description overview-text">HỒI_07 // PHẦN I / NĂM 3</span>
+                    <span class="overview-title overview-text">BIẾN CHUYỂN</span>
+                    <div class="val-button-container">
+                        <div class="val-outline overview-text">
+                            <a class="val-button" href="#">CHƠI MIỄN PHÍ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section name="gameplay">
+            <div class="gameplay-container">
+                <hr />
+                <h1 class="pt-4">CHÚNG TÔI LÀ VALORANT</h1>
+                <div class="gameplay-content">
+                    <h4>THÁCH THỨC MỌI GIỚI HẠN</h4>
+                    <p>
+                        Mang phong cách và trải nghiệm cá nhân tới đấu trường cạnh tranh toàn cầu. Sử dụng kỹ năng đấu súng cùng với lối tư duy chiến thuật sắc bén với hai phe tấn công và phòng thủ, thành bại được định đoạt chỉ trong 13 vòng đấu. Với chỉ 1 mạng mỗi vòng đấu, sự nhanh nhẹn và quyết đoán sẽ là yếu tố giúp bạn sống sót. Trải nghiệm VALORANT trong các chế độ chơi: Đấu Xếp Hạng, Đấu Thường, Sinh Tử và Spike Thần Tốc.
+                    </p>
+                    <div class="val-button-container">
+                        <div class="val-outline overview-text">
+                            <a class="val-button" href="#">CHƠI MIỄN PHÍ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gameplay-video">
+                    <div class="gameplay-tag text-light">Lối chơi</div>
+                    <video muted autoplay loop>
+                        <source src="videos/VALORANT_PLAY22_16x9_Target4_v005.mp4" type="video/mp4">
+                    </video>
+                    <div class="gameplay-video-line"></div>
+                </div>
+            </div>
+        </section>
+
+        <section name="agents">
+             <div class="bg-primary row agents-container">
+                <div class="agents-image col-6">
+                    <img id="parallax-image" src="images/agents/omen_portrait.webp" />
+                </div>
+                <div class="agents-about col-6">
+                    <hr>
+                    <h1>ĐẶC VỤ CỦA BẠN</h1>
+                    <h5>SÁNG TẠO LÀ VŨ KHÍ TỐI THƯỢNG CỦA BẠN</h5>
+                    <p>
+                        Ngoài việc trang bị súng đạn, hãy chọn cho riêng mình một Đặc Vụ có kỹ năng phù hợp với lối chơi của bạn để giúp bạn tỏa sáng trong nhẫn màn đấu súng khốc liệt tại VALORANT.
+                    </p>
+                    <div class="val-button-container">
+                        <div class="val-outline overview-text">
+                            <a class="val-button" href="#">KHÁM PHÁ CÁC ĐẶC VỤ</a>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <section name="map">
+            <div class="map-container">
+                <div>
+                    <div class="map-about position-relative">
+                        <hr />
+                        <h1>BẢN ĐỒ CỦA BẠN</h1>
+                        <h5>CHIẾN ĐẤU KHẮP THẾ GIỚI</h5>
+                        <p>
+                            Mỗi bản đồ đều là một sân chơi để bạn thỏa sức thể hiện tư duy sáng tạo của mình. Được xây dựng với mục đích phát triển chiến lược đội nhóm, các bản đồ VALORANT hứa hẹn mang đến cho người chơi những trận giao tranh ngoạn ngục cùng với muôn vàn khoảnh khắc xuất thần. Hãy là nguồn cảm hứng cho tất cả người chơi VALORANT và tạo ra cho mình lối chơi độc nhất vô nhị.
+                        </p>
+                        <div class="val-button-container">
+                            <div class="val-outline overview-text">
+                                <a class="val-button" href="#">KHÁM PHÁ CÁC BẢN ĐỒ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </body>
     
-    <body></body>
-    
-    <footer></footer>
+    <footer class="vh-100 bg-dark">
+
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>
